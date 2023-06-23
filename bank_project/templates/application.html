@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Form</title>
+
+</head>
+<body style="text-align:center;margin:10%; background-image:url({% static 'images/hero_2.jpg' %})">
+<h2> FOR APPLICATION FORM TO FILL PLEASE CLICK THE BUTTON</h2>
+
+<form   method="post">
+    {% csrf_token %}
+    <button style="display: inline-block; padding:5px 10px; font-size:20px;">
+        Application Form
+    </button>
+</form>
+
+</body>
+
+</html>
